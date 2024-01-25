@@ -11,8 +11,7 @@
 
 .app{
   min-height: 100vh;
-  /* background-image: url(/sfsites/c/resource/BmiAppBackground); */
-  background-image: url(/resource/BmiAppBackground);
+  background-image: url(/sfsites/c/resource/BmiAppBackground);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -26,10 +25,9 @@
   padding: var(--size-16);
   border-radius: 38px;
 }
-
 h1{
   font-size: 36px;
-  padding: 20px 0;
+  padding: 10px 0;
   font-weight: bold;
 }
 .info-wrapper{
@@ -63,4 +61,14 @@ input{
 .result-value{
   color: var(--light-blue);
   font-size: 30px;
+}
+.radio_group {
+  background: #EEEEEE;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.radio_buttons {
+  display: flex;
+  justify-content: space-evenly;
 }
