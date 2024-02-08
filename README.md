@@ -3,3 +3,4 @@
 
 ## Modifications Done:
 * BMI Calculator - added inches/pounds as additional option to calculate BMI.
+* Weather App - both Fahrenheit and Celcius are showing now for Temperature and Feels Like area

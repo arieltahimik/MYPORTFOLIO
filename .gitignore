@@ -45,4 +45,4 @@ $RECYCLE.BIN/
 **/venv/
 
 # WeatherAppController
-force-app/main/default/classes/weatherAppController.*
+force-app/main/default/classes/weatherAppController.cls
