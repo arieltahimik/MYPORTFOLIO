@@ -20,7 +20,7 @@ public with sharing class weatherAppController {
     return responseBody;
    }
    public static String getKey(){
-    String key = 'Please get your own API key from OpenWeathermap.org'; // '653e6566bd107af15256dae60889cba4'; // System.Label.WeatherApiKey
+    String key = '9marnUgLZBRbWYr7VYTtqJZkxmPFcYkb'; // '653e6566bd107af15256dae60889cba4'; // System.Label.WeatherApiKey
     String output = '&appid=' + key;
     return output;
    }
