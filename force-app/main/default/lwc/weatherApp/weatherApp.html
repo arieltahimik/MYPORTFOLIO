@@ -25,8 +25,13 @@
         <section class="slds-m-around_large text-center">
           <img src={weatherIcon} alt="weather icon" class="weatherImg" />
           <div class="temperature">
-            <span>{response.temperature} </span>
+            <span>{response.temperature}</span>
+            <span>°</span>F
+            <!-- For Celcius -->
+            <span> • </span>
+            <span>{inCelcius}</span>
             <span>°</span>C
+            <!-- End of For Celcius -->
           </div>
           <div class="description">{response.description} </div>
           <div class="location">
@@ -38,7 +43,10 @@
           <div class="feels_like">
             <div>
               <img src={thermometerIcon} alt="thermometer icon" />
-              <div>{response.feels_like}°C</div>
+              <!-- <div>{response.feels_like}°F</div> -->
+              <!-- For Fahrenheit and Celcius -->
+              <div>{response.feels_like}°F&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;{inCelciusFeelsLike}°C</div>
+              <!-- End of Fahrenheit and Celcius -->
             </div>
             <p>Feels like</p>
           </div>

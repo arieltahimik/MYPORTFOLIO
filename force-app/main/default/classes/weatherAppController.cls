@@ -2,7 +2,8 @@ public with sharing class weatherAppController {
 
    @AuraEnabled 
    public static string getWeatherDetails(String input){
-    String url = 'https://api.openweathermap.org/data/2.5/weather?q=' + input + '&units=metric' + getKey();
+   //  String url = 'https://api.openweathermap.org/data/2.5/weather?q=' + input + '&units=metric' + getKey();
+    String url = 'https://api.openweathermap.org/data/2.5/weather?q=' + input + '&units=imperial' + getKey();
     String response = getResponse(url);
     return response;
    }

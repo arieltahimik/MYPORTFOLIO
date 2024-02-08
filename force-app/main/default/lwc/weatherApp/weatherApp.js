@@ -21,6 +21,8 @@ export default class WeatherApp extends LightningElement {
   isError = false
   response
   weatherIcon
+  inCelcius
+  inCelciusFeelsLike
 
   get loadingClasses(){
     return this.isError ? 'error-msg':'success-msg'
@@ -40,6 +42,7 @@ export default class WeatherApp extends LightningElement {
     console.log("cityName", this.cityName)
     getWeatherDetails({input:this.cityName}).then(result=>{
       this.weatherDetails(JSON.parse(result))
+      console.log(result);
     }).catch((error)=>{
       console.error(error)
       this.response = null
@@ -89,8 +92,11 @@ export default class WeatherApp extends LightningElement {
         location:`${city}, ${country}`,
         feels_like: Math.floor(feels_like),
         humidity:`${humidity}%`
-      }
+      }     
     }
+    // Celcius computation
+    this.inCelcius = Math.floor(((info.main.temp - 32) * 5) / 9);
+    this.inCelciusFeelsLike = Math.floor(((info.main.feels_like - 32) * 5) / 9);
   }
 
   backHandler(){

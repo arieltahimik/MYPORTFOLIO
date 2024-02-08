@@ -113,3 +113,9 @@ footer {
 .cursor {
   cursor: pointer;
 }
+
+.thinline {
+  border-left: 1px solid #ccc;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
