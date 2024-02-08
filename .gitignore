@@ -43,3 +43,6 @@ $RECYCLE.BIN/
 **/__pycache__/
 **/.venv/
 **/venv/
+
+# WeatherAppController
+force-app/main/default/classes/weatherAppController.*
