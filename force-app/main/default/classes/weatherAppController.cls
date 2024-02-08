@@ -1,3 +1,4 @@
+// VSC showing error on class name, saying should be first letter is capital
 public with sharing class weatherAppController {
 
    @AuraEnabled 

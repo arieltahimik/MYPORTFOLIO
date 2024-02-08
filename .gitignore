@@ -46,3 +46,4 @@ $RECYCLE.BIN/
 
 # WeatherAppController
 force-app/main/default/classes/weatherAppController.cls
+force-app/main/default/classes/weatherAppController.cls-meta.xml
